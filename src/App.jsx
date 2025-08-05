@@ -127,12 +127,13 @@ function App() {
             {/* Botões Desktop */}
             <div className="hidden md:flex items-center space-x-4">
               <Button 
-                variant="outline" 
                 size="sm"
-          onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-                '_blank')}    >
-                <MessageCircle className="w-4 h-4 mr-2" />
-                WhatsApp
+          onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+                '_blank')}
+                className="bg-green-500 hover:bg-green-600 text-white"
+              >
+                <img src={whatsappIcon} alt="WhatsApp Icon" className="w-4 h-4 mr-2" />
+                Chamar Agora
               </Button>
               <Button 
                 size="sm"
@@ -172,10 +173,10 @@ function App() {
                   <Button 
                     variant="outline" 
                     size="sm"
-       onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+       onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
                     '_blank')}           >
                     <MessageCircle className="w-4 h-4 mr-2" />
-                    WhatsApp
+                    Chamar Agora
                   </Button>
                   <Button 
                     size="sm"
@@ -220,13 +221,14 @@ function App() {
               Ligar Agora: (11) 98690-2406
             </Button>
             <Button 
-              variant="outline" 
               size="lg"
-       onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-              '_blank')}       aria-label="Entrar em contato via WhatsApp"
+              onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+              '_blank')}
+              className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-4"
+              aria-label="Entrar em contato via WhatsApp"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp
+              <img src={whatsappIcon} alt="WhatsApp Icon" className="w-5 h-5 mr-2" />
+              Chamar Agora
             </Button>
           </div>
         </div>
@@ -261,7 +263,7 @@ function App() {
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Button 
                     className="w-full bg-red-600 hover:bg-red-700"
-                    onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sobre%20${service.title}`, 
+                    onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sobre%20${service.title}`, 
                     '_blank')}aria-label={`Solicitar orçamento para ${service.title}`}
                   >
                     Pedir Orçamento
@@ -378,7 +380,7 @@ function App() {
               <div className="mt-6">
                 <Button 
                   className="bg-red-600 hover:bg-red-700"
-                  oonClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20e%20verificar%20se%20vocês%20atendem%20na%20minha%20região.`, 
+                  oonClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20e%20verificar%20se%20vocês%20atendem%20na%20minha%20região.`, 
                   '_blank')}ria-label="Verificar se atendemos na sua região"
                 >
                   Verificar Atendimento na Sua Região
@@ -537,7 +539,7 @@ function App() {
                 <Button 
                   type="button"
                   className="w-full bg-red-600 hover:bg-red-700"
-                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá! Gostaria de solicitar um orçamento.`, '_blank')}
+                  onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá! Gostaria de solicitar um orçamento.`, '_blank')}
                   aria-label="Enviar solicitação via WhatsApp"
                 >
                   Enviar via WhatsApp
@@ -686,15 +688,17 @@ function App() {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           size="lg"
-         onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-              '_blank')}ssName="bg-green-500 hover:bg-green-600 rounded-full w-16 h-16 shadow-lg p-0"
+          onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+              '_blank')}
+          className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center"
           aria-label="Entrar em contato via WhatsApp - Botão flutuante"
         >
           <img 
             src={whatsappIcon} 
             alt="WhatsApp" 
-            className="w-10 h-10"
+            className="w-6 h-6 mr-2"
           />
+          Chamar Agora
         </Button>
       </div>
     </div>
