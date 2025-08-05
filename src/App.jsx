@@ -129,10 +129,8 @@ function App() {
               <Button 
                 variant="outline" 
                 size="sm"
-                onClick={() => window.open(`https://wa.me/${whatsappNumber}`, '_blank')}
-                className="bg-green-500 text-white border-green-500 hover:bg-green-600"
-                aria-label="Entrar em contato via WhatsApp"
-              >
+          onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+                '_blank')}    >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 WhatsApp
               </Button>
@@ -174,9 +172,8 @@ function App() {
                   <Button 
                     variant="outline" 
                     size="sm"
-                    onClick={() => window.open(`https://wa.me/${whatsappNumber}`, '_blank')}
-                    className="bg-green-500 text-white border-green-500 hover:bg-green-600"
-                  >
+       onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+                    '_blank')}           >
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp
                   </Button>
@@ -225,9 +222,8 @@ function App() {
             <Button 
               variant="outline" 
               size="lg"
-              onClick={() => window.open(`https://wa.me/${whatsappNumber}`, '_blank')}
-              className="bg-green-500 text-white border-green-500 hover:bg-green-600 text-lg px-8 py-4"
-              aria-label="Entrar em contato via WhatsApp"
+       onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+              '_blank')}       aria-label="Entrar em contato via WhatsApp"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               WhatsApp
@@ -265,8 +261,8 @@ function App() {
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Button 
                     className="w-full bg-red-600 hover:bg-red-700"
-                    onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá! Gostaria de solicitar orçamento para ${service.title}`, '_blank')}
-                    aria-label={`Solicitar orçamento para ${service.title}`}
+                    onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sobre%20${service.title}`, 
+                    '_blank')}aria-label={`Solicitar orçamento para ${service.title}`}
                   >
                     Pedir Orçamento
                   </Button>
@@ -382,8 +378,8 @@ function App() {
               <div className="mt-6">
                 <Button 
                   className="bg-red-600 hover:bg-red-700"
-                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá! Gostaria de verificar se vocês atendem na minha região.`, '_blank')}
-                  aria-label="Verificar se atendemos na sua região"
+                  oonClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20e%20verificar%20se%20vocês%20atendem%20na%20minha%20região.`, 
+                  '_blank')}ria-label="Verificar se atendemos na sua região"
                 >
                   Verificar Atendimento na Sua Região
                 </Button>
@@ -690,8 +686,8 @@ function App() {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           size="lg"
-          onClick={() => window.open(`https://wa.me/${whatsappNumber}`, '_blank')}
-          className="bg-green-500 hover:bg-green-600 rounded-full w-16 h-16 shadow-lg p-0"
+         onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
+              '_blank')}ssName="bg-green-500 hover:bg-green-600 rounded-full w-16 h-16 shadow-lg p-0"
           aria-label="Entrar em contato via WhatsApp - Botão flutuante"
         >
           <img 

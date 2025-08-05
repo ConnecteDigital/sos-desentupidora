@@ -14,7 +14,7 @@ export default defineConfig({
   server: {
     host: true,
     allowedHosts: [
-      "5173-i1x67ojnx2yup0ielysj6-d1374e4f.manus.computer"
+      "5173-ihil84hvrgnpq6bd5bw0m-1a67b2f2.manusvm.computer"
     ]
   }
 })
