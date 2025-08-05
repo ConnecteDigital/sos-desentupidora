@@ -126,15 +126,15 @@ function App() {
 
             {/* Botões Desktop */}
             <div className="hidden md:flex items-center space-x-4">
-              <Button 
-                size="sm"
-          onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-                '_blank')}
-                className="bg-green-500 hover:bg-green-600 text-white"
+              <a 
+                href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-8 px-3 bg-green-500 hover:bg-green-600 text-white"
               >
                 <img src={whatsappIcon} alt="WhatsApp Icon" className="w-4 h-4 mr-2" />
                 Chamar Agora
-              </Button>
+              </a>
               <Button 
                 size="sm"
                 onClick={() => window.open(`tel:${phoneNumber}`, '_self')}
@@ -170,14 +170,15 @@ function App() {
                 <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-red-600 transition-colors text-left">Contato</button>
                 <button onClick={() => scrollToSection('blog')} className="text-gray-700 hover:text-red-600 transition-colors text-left">Blog</button>
                 <div className="flex flex-col space-y-2 pt-3 border-t">
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-       onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-                    '_blank')}           >
+                  <a 
+                    href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-8 px-3 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground"
+                  >
                     <MessageCircle className="w-4 h-4 mr-2" />
                     Chamar Agora
-                  </Button>
+                  </a>
                   <Button 
                     size="sm"
                     onClick={() => window.open(`tel:${phoneNumber}`, '_self')}
@@ -220,16 +221,16 @@ function App() {
               <Phone className="w-5 h-5 mr-2" />
               Ligar Agora: (11) 98690-2406
             </Button>
-            <Button 
-              size="lg"
-              onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-              '_blank')}
-              className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-4"
+            <a 
+              href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg font-medium transition-all h-10 px-8 py-4 bg-green-500 hover:bg-green-600 text-white"
               aria-label="Entrar em contato via WhatsApp"
             >
               <img src={whatsappIcon} alt="WhatsApp Icon" className="w-5 h-5 mr-2" />
               Chamar Agora
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -261,13 +262,15 @@ function App() {
                     <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
                   </div>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Button 
-                    className="w-full bg-red-600 hover:bg-red-700"
-                    onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sobre%20${service.title}`, 
-                    '_blank')}aria-label={`Solicitar orçamento para ${service.title}`}
+                  <a 
+                    href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20sobre%20${service.title}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full bg-red-600 hover:bg-red-700 text-white"
+                    aria-label={`Solicitar orçamento para ${service.title}`}
                   >
                     Pedir Orçamento
-                  </Button>
+                  </a>
                 </div>
               </div>
             ))}
@@ -378,13 +381,15 @@ function App() {
                 </div>
               </div>
               <div className="mt-6">
-                <Button 
-                  className="bg-red-600 hover:bg-red-700"
-                  oonClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20e%20verificar%20se%20vocês%20atendem%20na%20minha%20região.`, 
-                  '_blank')}ria-label="Verificar se atendemos na sua região"
+                <a 
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20e%20verificar%20se%20vocês%20atendem%20na%20minha%20região.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 bg-red-600 hover:bg-red-700 text-white"
+                  aria-label="Verificar se atendemos na sua região"
                 >
                   Verificar Atendimento na Sua Região
-                </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -536,14 +541,15 @@ function App() {
                     placeholder="Descreva o problema..."
                   ></textarea>
                 </div>
-                <Button 
-                  type="button"
-                  className="w-full bg-red-600 hover:bg-red-700"
-                  onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá! Gostaria de solicitar um orçamento.`, '_blank')}
+                <a 
+                  href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá! Gostaria de solicitar um orçamento.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 w-full bg-red-600 hover:bg-red-700 text-white"
                   aria-label="Enviar solicitação via WhatsApp"
                 >
                   Enviar via WhatsApp
-                </Button>
+                </a>
               </form>
             </div>
           </div>
@@ -686,11 +692,11 @@ function App() {
 
       {/* Botão Flutuante WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
-        <Button
-          size="lg"
-          onClick={() => window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`, 
-              '_blank')}
-          className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center"
+        <a
+          href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all bg-green-500 hover:bg-green-600 text-white shadow-lg px-6 py-3"
           aria-label="Entrar em contato via WhatsApp - Botão flutuante"
         >
           <img 
@@ -699,7 +705,7 @@ function App() {
             className="w-6 h-6 mr-2"
           />
           Chamar Agora
-        </Button>
+        </a>
       </div>
     </div>
   )
